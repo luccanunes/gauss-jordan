@@ -15,7 +15,7 @@ The accepted commands are:
 - ```s {l} {k}``` - swaps rows l and k
 - ```m {l} {x}``` - multiplies row l by x
 - ```d {l} {x}``` - divides row l by x
-- ```a {l} {x} {k}``` - adds x*k to row l
+- ```a {l} {x} {k}``` - adds x times row k to row l
 > After each command, the new matrix will be printed
 
 Example: <br>
