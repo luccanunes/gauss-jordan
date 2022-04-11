@@ -40,13 +40,17 @@ struct Matrix {
     }
     void multiply_row(int l, double x) {
         l--;
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
+            if (v[l][i] == 0) continue;
             v[l][i] *= x;
+        }
     }
     void divide_row(int l, double x) {
         l--;
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
+            if (v[l][i] == 0) continue;
             v[l][i] /= x;
+        }
     }
     void add_row(int l, double x, int k) {  // add x*k to l
         l--, k--;
